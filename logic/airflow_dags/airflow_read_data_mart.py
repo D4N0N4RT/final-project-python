@@ -21,7 +21,7 @@ with DAG(
         tags=["analytical_mart"],
 ) as dag:
     data_mart_sales = PythonOperator(
-        task_id="total_analisys",
+        task_id="total_analysis",
         python_callable=sale_analisys,
     )
 
